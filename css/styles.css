@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+#container2{
+    display: none;
+}
+
+.container{
+    height: 95vh;
+    margin: 0 auto;
+    background-color: #71b5b9;
+    flex-direction: column ;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    
+}
+
+button{
+    background-color: #97cea9;
+    border: 4px solid black;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.bienvenido{
+    padding-top: 13%;
+}
+
+#result{
+    text-align: center;
+}
+
+#result img{
+    width: 10%;
+}
+
+#texto{
+    font-size: 26px;
+    padding: 20px;
+}
+
+
+#grupo_btn{
+    display: flex;
+    width: 100%;
+}
+
+#play{
+    width: 5vw;
+    height: 8vh;
+    margin-bottom: 14%; 
+    
+}
+
+#play:hover{
+    color: #66d36c;
+    background: #2196f3;
+    box-shadow: 00 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+#reset{
+    float: right;
+    background-color: #66d36c;  
+}
+
+#reset:hover{
+    color: #66d36c;
+    background: #2196f3;
+    box-shadow: 00 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+} 
+
+
+.btnOpt{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+}
+
+p{
+font-size:1.50em;
+}
+
+.color{
+color: #000;
+}
+
+.boton_piedra{
+    background-image: url(../img/piedra.svg);
+}
+
+.boton_papel{
+    background-image: url(../img/papel.svg);
+}
+
+.boton_tijera{
+    background-image: url(../img/tijera.svg);
+}

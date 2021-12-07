@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"/>
+      <!--Fuente de texto-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Play&display=swap" rel="stylesheet">
+
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+
+
+    <audio autoplay loop></audio>
+
+    <div class="container text-white" id="container1">
+      <h1>Piedra, Papel o Tijera</h1>
+
+      <div class="row">
+        <div class="col-12 text-center bienvenido">
+          <h2>Bienvenido! cuantas veces deseas jugar?</h2>
+          <input id="count" type="number" min="1" max="10" />
+          <button id="play">Jugar!</button>
+
+          <div class="col-12 pb-3">
+            <i class="far fa-hand-rock fa-4x mx-3 color"></i>
+            <i class="far fa-hand-paper fa-4x mx-3  color"></i>
+            <i class="far fa-hand-scissors fa-4x mx-3  color"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container row text-white text-center" id="container2">
+        <div class="col-11 text-end">
+            <p>
+              Partidas Jugadas:
+              <span id="totalPlayed"></span>
+            </p>
+          </div>
+      <h1>Piedra, Papel o Tijera</h1>
+
+      <div id="result" class="row text-center">
+        
+        <div class="col-12 text-center ">
+          <img id="maquina_img" src="img/piedra.svg" alt="piedra" />
+
+          <div id="texto" text-white>Elija una opción para empezar</div>
+
+          <img id="usuario_img" src="img/piedra.svg" alt="piedra" />
+        </div>
+      </div>
+
+      <div id="grupo_btn mx-auto d-block">
+        <div class="row">
+          <div class="col-12 text-center">
+            <button
+              id="piedra"
+              type="button"
+              class="btnOpt boton_piedra"
+            ></button>
+
+            <button
+              id="papel"
+              type="button"
+              class="btnOpt boton_papel"
+            ></button>
+
+            <button
+              id="tijera"
+              type="button"
+              class="btnOpt boton_tijera"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-6">
+            <p>
+                <i class="fas fa-desktop fa-3x color"></i>
+                Puntaje Maquina:
+                <span id="ptn_pc"></span>
+              </p>
+          </div>
+
+          <div class="col-6">
+            <p>
+                <i class="fas fa-male fa-3x color"></i>
+                Puntaje Jugador:
+                <span id="ptn_ply"></span>
+              </p>
+          </div>
+          <div class="col-12">
+            <button id="reset" onclick="location.reload()">Reiniciar</button>
+          </div>
+          <div class="col-12">
+            <div text-white id="mensaje">
+                <p>¿Quien sera el ganador?</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!--Bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Mi JS-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
